@@ -1,12 +1,38 @@
-export default function Stage() {
-  return (
+import { ReactElement } from "react";
+import { StageBase, StageResponse, InitialData, Message } from "@chub-ai/stages-ts";
+import { LoadResponse } from "@chub-ai/stages-ts/dist/types/load";
+
+// Import your stylesheet so Vite bundles it (Make sure to copy styles.css into this src folder first!)
+import "./styles.css";
+
+export default class Stage extends StageBase<any, any, any, any> {
+  constructor(data: InitialData<any, any, any, any>) {
+    super(data);
+  }
+
+  async load(): Promise<Partial<LoadResponse<any, any, any>>> {
+    return { success: true };
+  }
+
+  async setState(state: any): Promise<void> {}
+
+  async beforePrompt(userMessage: Message): Promise<Partial<StageResponse<any, any>>> {
+    return {};
+  }
+
+  async afterResponse(botMessage: Message): Promise<Partial<StageResponse<any, any>>> {
+    return {};
+  }
+
+  render(): ReactElement {
+    return (
     <div className="stage-root">
       <div className="page-shell">
-        <div className="fx-snow" aria-hidden="true">
-          <span className="flake layer-back f1">✧</span>
-          <span className="flake layer-back f2">✦</span>
-          <span className="flake layer-back f3">❄</span>
-          <span className="flake layer-back f4">✶</span>
+        <div className="fx-fireflies" aria-hidden="true">
+          <span className="firefly f1"></span>
+          <span className="firefly f2"></span>
+          <span className="firefly spirit f3"></span>
+          <span className="firefly f4"></span>
         </div>
 
         <section className="hero panel">
@@ -102,4 +128,5 @@ export default function Stage() {
       </div>
     </div>
   );
+  }
 }
