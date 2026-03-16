@@ -1,5 +1,5 @@
 {
-  "name": "@sin.seer/css-stages",
+  "name": "@sin-seer/css-stages",
   "private": false,
   "version": "1.0.0",
   "type": "module",
@@ -10,10 +10,10 @@
   "module": "./dist/index.js",
   "license": "UNLICENSED",
   "scripts": {
-    "dev": "vite",
-    "build": "tsc && vite build",
+    "dev": "node ./node_modules/vite/bin/vite.js --host",
+    "build": "tsc && node ./node_modules/vite/bin/vite.js build",
     "lint": "eslint . --ext ts,tsx --report-unused-disable-directives --max-warnings 0",
-    "preview": "vite preview"
+    "preview": "node ./node_modules/vite/bin/vite.js preview"
   },
   "dependencies": {
     "@chub-ai/stages-ts": "^0.3.7",

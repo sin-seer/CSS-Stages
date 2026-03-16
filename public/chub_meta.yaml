@@ -8,7 +8,7 @@ project_name: "Sin Seers Stage"
 tagline: "Cathedral-style character interface"
 
 # 'PUBLIC', 'PRIVATE', or 'UNLISTED'.
-visibility: 'UNLISTED'
+visibility: 'PUBLIC'
 
 # 'ADJACENT' | 'NONE' | 'COVER' | 'FULLSCREEN'
 # 'ADJACENT' is default. The frame will display on the side of the
