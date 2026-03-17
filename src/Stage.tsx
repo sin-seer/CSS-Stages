@@ -11,7 +11,7 @@ import {LoadResponse} from "@chub-ai/stages-ts/dist/types/load";
   but not for things like history, which is best managed ephemerally
   in the internal state of the Stage class itself.
  ***/
-type MessageStateType = any;
+type MessageStateType = null;
 
 /***
  The type of the stage-specific configuration of this stage.
@@ -19,7 +19,7 @@ type MessageStateType = any;
  @description This is for things you want people to be able to configure,
   like background color.
  ***/
-type ConfigType = any;
+type ConfigType = null;
 
 /***
  The type that this stage persists chat initialization state in.
@@ -27,7 +27,7 @@ type ConfigType = any;
  like procedurally generated terrain that is only created ONCE and ONLY ONCE per chat,
  it belongs here.
  ***/
-type InitStateType = any;
+type InitStateType = null;
 
 /***
  The type that this stage persists dynamic chat-level state in.
@@ -37,6 +37,7 @@ type InitStateType = any;
     data like player health then it will enter an inconsistent state whenever
     they change branches or jump nodes. Use MessageStateType for that.
  ***/
+type ChatStateType = null;
 
 /***
  A simple example class that implements the interfaces necessary for a Stage.
