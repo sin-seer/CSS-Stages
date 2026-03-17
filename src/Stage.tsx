@@ -160,7 +160,7 @@ export class Stage extends StageBase<InitStateType, ChatStateType, MessageStateT
             /*** @type null | string @description A string to add to the
              end of the final prompt sent to the LLM,
              but that isn't persisted. ***/
-            stageDirections: null,
+            stageDirections: any,
             /*** @type MessageStateType | null @description the new state after the botMessage. ***/
             messageState: null,
             /*** @type null | string @description If not null, the bot's response itself is replaced
