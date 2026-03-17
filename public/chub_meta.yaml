@@ -8,7 +8,7 @@ project_name: "Sin Seers Stage"
 tagline: "Cathedral-style character interface"
 
 # 'PUBLIC', 'PRIVATE', or 'UNLISTED'.
-visibility: 'PUBLIC'
+visibility: 'PRIVATE'
 
 # 'ADJACENT' | 'NONE' | 'COVER' | 'FULLSCREEN'
 # 'ADJACENT' is default. The frame will display on the side of the
@@ -18,7 +18,7 @@ visibility: 'PUBLIC'
 #   but leave the text input box.
 # 'FULLSCREEN' will make nothing below the header bar
 #   show except for your stage.
-position: 'FULLSCREEN'
+position: 'ADJACENT'
 
 # Self-explanatory.
 tags:
@@ -33,9 +33,6 @@ tags:
 config_schema:
   type: object
   properties:
-    health:
-      type: integer
-      default: 100
 
 # The schema of the state that you store.
 # This isn't needed even if you do store state,
