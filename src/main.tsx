@@ -1,6 +1,6 @@
 import React from 'react'
 import ReactDOM from 'react-dom/client'
-import StageBase from './stage'
+import Stage from './Stage'
 import './index.scss'
 
 ReactDOM.createRoot(document.getElementById('root')!).render(
@@ -10,6 +10,6 @@ ReactDOM.createRoot(document.getElementById('root')!).render(
   //     commented-out code, but because of the nature
   //     of stages it's disabled by default here.
   // <React.StrictMode>React.StrictMode>
-    <StageBase />
+    <Stage />
   //</React.StrictMode>,
 )
