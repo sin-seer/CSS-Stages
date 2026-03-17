@@ -37,7 +37,6 @@ type InitStateType = any;
     data like player health then it will enter an inconsistent state whenever
     they change branches or jump nodes. Use MessageStateType for that.
  ***/
-type ChatStateType = any;
 
 /***
  A simple example class that implements the interfaces necessary for a Stage.
