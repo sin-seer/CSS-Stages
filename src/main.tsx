@@ -1,6 +1,6 @@
 import React from 'react'
 import ReactDOM from 'react-dom/client'
-import stage from './stage'
+import Stagebase from './stage'
 import './index.scss'
 
 ReactDOM.createRoot(document.getElementById('root')!).render(
